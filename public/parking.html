@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+    
+  </head>
+  <body>
+      <div class="nav-button"><button type="button" id="navbut"><i class="fas fa-angle-double-left"></i></button></div>
+      <div class="nav-button2 d-none"><button type="button" id="navbut2"><i class="fas fa-angle-double-right"></i></button></div>
+      <nav>
+        <div class="navbar">
+            <img src="Untitled.png" style="width:95%; margin-left: 5px; margin-bottom: 5px;">
+            <div class="homediv">
+            <a href="/" class="home2">
+              <br> <i class="fa fa-home w3-xxlarge"></i>
+                <p>HOME</p>
+              </a>
+            </div>
+            <div class="chatdiv">
+              <a href="/chat" class="chat2">
+                <br> <i class="fa fa-user w3-xxlarge"></i>
+                <p>CHAT</p>
+              </a>
+            </div>
+              <div class="parkingdiv" style="background-color:black">
+              <a href="/parking" class="parking2">
+                <br> <i class="fas fa-car"></i>
+                <p>PARKING</p>
+              </a>
+              </div>
+              <div class="weatherdiv">
+              <a href="/weather" class="weather2">
+                <br> <i class="fas fa-cloud"></i>
+                <p>WEATHER</p>
+              </a>
+              </div>
+              <div class="mailingdiv">
+                  <a href="/signup" class="signup2">
+                     <br> <i class="fas fa-envelope"></i>
+                    <p>MAILING LIST</p>
+                  </a>
+              </div>
+              <div class="logoutdiv">
+                <a href="https://gtprojtwo.auth0.com/v2/logout" class="logout2">
+                  <br> <i class="fa fa-power-off"></i>
+                  <p>LOG OUT</p>
+                </a>
+              </div> 
+        </div>
+      </nav>
+    
+      <div class="main">
+      <div class="parking">
+        <img src="parkmap.png" alt="Gameday Parking Map" height="400px" id="parkmap">
+        <button type="button" class="zoombtn"><i class="fas fa-search-plus"></i></button>
+
+                  <form class="busesForm" style="width: 500px">
+                  </form><br>
+                  
+
+                  <div class="predictions d-none" id="result">
+                      <h1 id="stingerRoute"></h1>
+                      <table class="table table-bordered table-hover">
+                          <caption>Next Buses</caption>
+                          <thead>
+                              <tr>
+                                  <th>Direction:</th>
+                                  <td id="direction"></td>
+                              </tr>
+                          </thead>
+                          <tbody id="predict">
+                              
+                              <tr>
+                                  <th id="idNum"><br>id</th>
+                                  <th id="arrivalTime">Arrives in</th>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+
+                  
+                </div>  
+              
+    </div>
+
+    
+    <div id="modalid" class="modal d-none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="parkmap.png" alt="Gameday Parking Map">
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/buses.js"></script>
+  </body>
+</html>

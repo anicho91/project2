@@ -1,0 +1,46 @@
+{
+  "name": "groupProject2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kora25/groupProject2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kora25/groupProject2/issues"
+  },
+  "homepage": "https://github.com/Kora25/groupProject2#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.4",
+    "passport": "^0.4.0",
+    "passport-auth0": "^1.1.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.3",
+    "sequelize": "^4.41.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
